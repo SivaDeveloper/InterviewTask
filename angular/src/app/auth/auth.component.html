@@ -1,0 +1,15 @@
+<div>
+    <h2>Login</h2>
+    <input [(ngModel)]="username" placeholder="Username" />
+    <input [(ngModel)]="password" type="password" placeholder="Password" />
+    <button (click)="login()">Login</button>
+    <p *ngIf="token">Token: {{ token }}</p>
+  </div>
+  
+  <div>
+    <h2>Generate One-Time Link</h2>
+    <input [(ngModel)]="username" placeholder="Username" />
+    <button (click)="generateOneTimeLink()">Generate Link</button>
+    <p *ngIf="link">One-Time Link: <a [href]="link" target="_blank">{{ link }}</a></p>
+  </div>
+  

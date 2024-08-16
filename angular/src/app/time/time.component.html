@@ -1,0 +1,7 @@
+<div>
+    <h2>Get Time</h2>
+    <input [(ngModel)]="token" placeholder="Token" />
+    <button (click)="getTime()">Get Time</button>
+    <p *ngIf="currentTime">Current Time: {{ currentTime }}</p>
+  </div>
+  
